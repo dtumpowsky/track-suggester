@@ -22,7 +22,7 @@ alert(add(number1, number2));
 
 //BMI Calculator
 
-var bmi = function(height, weight){
+var bmi = function(weight, height){
 	return (weight / (height^2));
 }
 
@@ -32,4 +32,29 @@ var weight = prompt("How much do you weigh?");
 var kg = weight * 2.2;
 var cm = height * 2.54;
 
-alert(bmi(cm, kg));
+alert(bmi(kg, cm));
+
+
+// Temperature Converty C -> F//
+
+
+var celsius = prompt("What is the temperature Celsius?")
+
+var conversion = function(inputTemperatureC) {
+	return (inputTemperatureC * (9/5) + 32);
+}
+
+alert(conversion(celsius) + " degrees fahrenheit");
+
+
+// Temperature Converty F -> C//
+
+var fahrenheit = prompt("What is the temperature Fahrennheit?");
+
+var fahrenConvert = function(inputTemperatureF) {
+  return ((inputTemperatureF - 32) / (9/5));
+}
+
+alert(fahrenConvert(fahrenheit) + " degrees celsius");
+
+alert(conversion(celsius) + " degrees fahrenheit");

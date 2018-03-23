@@ -7,33 +7,50 @@ var trackPHP = "PHP"
 var trackSharp = "C#"
 var trackJava = "Java"
 
-var interest = $("#csInterest").val();
-var city = $("#city").val();
-var workEnviro = $("#wkEnviro").val();
-var corpSeattle = $("#corpSeattle").val();
-var corpSanFran = $("#corpSanFran").val()
+var city = $("input:radio[name=question2]:checked").val();
+var interest = $("input:radio[name=question3]:checked").val();
+var workEnviro = $("input:radio[name=question4]:checked").val();
+var corpSeattle = $("input:radio[name=question5]:checked").val();
+var corpSanFran = $("input:radio[name=question5-2]:checked").val();
 
 
-if (city === "#seattle" || "#sanFran" && interest === "#frontEnd") {
-	alert(trackCSS);
+if (interest == "frontEnd") {
+	return (trackCSS);
 }
 
-if (city === "#seattle" && interest === "#backEnd" && workEnviro === "#corp" && corpSeatte === "corpAmazon") {
-	alert(trackJava);
-} else {
-	alert(trackSharp);
-}
+	if (city == "#seattle") {
+		if (interest == "#backEnd") {
+		 	if (workEnviro == "#corp") {
+				if (corpSeatte == "corpAmazon") {
+					return(trackJava);
+				} else {
+					return(trackSharp);
+				}
+			}
+		}
+	}
 
-if (city === "#sanFran" && interest === "#backEnd" && workEnviro === "#corp" && corpSanFran === "corpGoogle") {
-	alert(trackJava);
-} else {
-	alert(trackSharp);
-}
+	if (city == "#sanFran") {
+		if (interest == "#backEnd") {
+			if (workEnviro == "#corp") {
+				if (corpSanFran == "corpGoogle") {
+					return(trackJava);
+				} else {
+				  return(trackSharp);
+				}
+			}
+		}
+	}
 
-if (city === "#seattle" || "#sanFran" && interest === "#backEnd" & workEnviro === "#startUp") {
-	alert(trackPHP);
-}
 
+
+if (city == "#seattle" || "#sanFran") {
+	if (interest == "#backEnd")
+		if (workEnviro == "#startUp") {
+	return(trackPHP);
+		} else {
+	}
+}
 
 
 
@@ -55,13 +72,13 @@ $(document).ready(function() {
 
 	$("#city form").submit(function(event) {
 		var citySelect = $("input:radio[name=question2]:checked").val();
-		event.preventDefault();
 
 		$("button#next2").submit(function() {
-			if (citySelect === "#seattle" || "#sanFran") {
+			if (citySelect == "#seattle" || "#sanFran") {
 			$("#interest").show();
 			$("button#next3").show();
 		}
+		event.preventDefault();
 		});
 
 	});
@@ -70,7 +87,7 @@ $(document).ready(function() {
 		var interestSelect = $("input:radio[name=question3]:checked").val();
 		$("button#next4").show();
 
-	/*	if (interestSelect === "#backEnd") {
+	/*	if (interestSelect == "#backEnd") {
 			$("workEnviro").show();
 		} else {
 			$(alert("CSS is the best track for you!"));

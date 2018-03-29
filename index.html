@@ -11,6 +11,9 @@
   <body>
     <div class="container">
 
+
+
+
 <!--Question 1-->
     <form id="trackSelect">
       <div class="form-group">
@@ -19,82 +22,73 @@
         <small id="greeting" class="form-text text-muted">Help us get to know you.</small>
       </div>
       <button type="submit" class="btn btn-success" id="next1">Next</button>
+    </form>
 
       <h4 id="start"> Hello! Now lets get started... </h4>
 <!--Question 2-->
       <form id="city">
         <h3> Which of these tech hubs would like work in?</h5>
         <div class="radio1">
-          <input type="radio" name="question2" value="" id="seattle">
-            <label> Seattle </label>
+          <label><input type="radio" name="question2" value="" id="seattle">Seattle </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question2" value="" id="sanFran">
-            <label> San Francisco </label>
+          <label><input type="radio" name="question2" value="" id="sanFran">San Francisco</label>
         </div>
+        <button type="submit" class="btn btn-success" id="next2">Next</button>
       </form>
-      <button type="submit" class="btn btn-success" id="next2">Next</button>
+
 
 
 <!--Question 3-->
       <form id="interest">
         <h3> If you had to pick, what area of development spaks your interest?</h5>
         <div class="radio1">
-          <input type="radio" name="question3" value="" id="frontEnd">
-            <label> Aesthetics of the webpage </label>
+          <label><input type="radio" name="question3" value="" id="frontEnd">Aesthetics of the webpage</label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question3" value="" id="backEnd">
-            <label> Manipulation of data </label>
+          <label><input type="radio" name="question3" value="" id="backEnd">Manipulation of data</label>
         </div>
+        <button type="submit" class="btn btn-success" id="next3">Next</button>
       </form>
-      <button type="submit" class="btn btn-success" id="next3">Next</button>
+
 
 <!--Question 4-->
       <form id="workEnviro">
         <div class="radio1">
-          <input type="radio" name="question4" value="" id="startUp">
-            <label> Start Up </label>
+          <label><input type="radio" name="question4" value="" id="startUp">Start Up</label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question4" value="" id="corp">
-            <label> Large Enterprise </label>
+          <label><input type="radio" name="question4" value="" id="corp">Large Enterprise</label>
         </div>
-      </form>
       <button type="submit" class="btn btn-success" id="next4">Next</button>
+      </form>
 
 
 
 <!--Question 5= corp Seattle-->
       <form id="corpSeattle">
         <div class="radio1">
-          <input type="radio" name="question5" value="" id="corpAmazon">
-            <label> Amazon </label>
+          <label><input type="radio" name="question5" value="" id="corpAmazon">Amazon</label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question5" value="" id="corpMicro">
-            <label> Microsoft </label>
+          <label><input type="radio" name="question5" value="" id="corpMicro">Microsoft</label>
         </div>
+        <button type="submit" class="btn btn-success" id="next4">Next</button>
       </form>
-      <button type="submit" class="btn btn-success" id="next4">Next</button>
+
 
 <!--Question 5= corp SanFran-->
       <form id="corpSanFran">
         <div class="radio1">
-          <input type="radio" name="question5-2" value="" id="corpGoogle">
-            <label> Google </label>
+          <label><input type="radio" name="question5-2" value="" id="corpGoogle">Google</label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question5-2" value="" id="stackOverflow">
-            <label> Stack Overflow </label>
+          <label><input type="radio" name="question5-2" value="" id="stackOverflow">stackOverflow</label>
         </div>
-      </form>
       <button type="submit" class="btn btn-success" id="next4">Next</button>
     </form>
 
-      <div id="result">
-      </div>
-
+    <p id="result"></p>
 
 
     </div>

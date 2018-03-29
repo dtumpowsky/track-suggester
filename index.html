@@ -12,6 +12,7 @@
     <div class="container">
 
 <!--Question 1-->
+    <form id="trackSelect">
       <div class="form-group">
         <label for="nameInput">Please Enter your name</label>
         <input type="text" class="form-control" id="nameInput" placeholder="Name">
@@ -19,16 +20,16 @@
       </div>
       <button type="submit" class="btn btn-success" id="next1">Next</button>
 
+      <h4 id="start"> Hello! Now lets get started... </h4>
 <!--Question 2-->
       <form id="city">
-        <h4> Hello! Now lets get started... </h4>
         <h3> Which of these tech hubs would like work in?</h5>
         <div class="radio1">
-          <input type="radio" name="question2" value="seattle" id="seattle">
+          <input type="radio" name="question2" value="" id="seattle">
             <label> Seattle </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question2" value="sanFran" id="sanFran">
+          <input type="radio" name="question2" value="" id="sanFran">
             <label> San Francisco </label>
         </div>
       </form>
@@ -39,11 +40,11 @@
       <form id="interest">
         <h3> If you had to pick, what area of development spaks your interest?</h5>
         <div class="radio1">
-          <input type="radio" name="question3" value="frontEnd" id="frontEnd">
+          <input type="radio" name="question3" value="" id="frontEnd">
             <label> Aesthetics of the webpage </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question3" value="backEnd" id="backEnd">
+          <input type="radio" name="question3" value="" id="backEnd">
             <label> Manipulation of data </label>
         </div>
       </form>
@@ -52,11 +53,11 @@
 <!--Question 4-->
       <form id="workEnviro">
         <div class="radio1">
-          <input type="radio" name="question4" value="startUp" id="startUp">
+          <input type="radio" name="question4" value="" id="startUp">
             <label> Start Up </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question4" value="corp" id="corp">
+          <input type="radio" name="question4" value="" id="corp">
             <label> Large Enterprise </label>
         </div>
       </form>
@@ -67,27 +68,32 @@
 <!--Question 5= corp Seattle-->
       <form id="corpSeattle">
         <div class="radio1">
-          <input type="radio" name="question5" value="corpAmazon" id="corpAmazon">
+          <input type="radio" name="question5" value="" id="corpAmazon">
             <label> Amazon </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question5" value="corpMicro" id="corpMicro">
+          <input type="radio" name="question5" value="" id="corpMicro">
             <label> Microsoft </label>
         </div>
       </form>
-
+      <button type="submit" class="btn btn-success" id="next4">Next</button>
 
 <!--Question 5= corp SanFran-->
       <form id="corpSanFran">
         <div class="radio1">
-          <input type="radio" name="question5-2" value="corpSanFran" id="corpGoogle">
+          <input type="radio" name="question5-2" value="" id="corpGoogle">
             <label> Google </label>
         </div>
         <div class="radio1">
-          <input type="radio" name="question5-2" value="corpSanFran" id="stackOverflow">
+          <input type="radio" name="question5-2" value="" id="stackOverflow">
             <label> Stack Overflow </label>
         </div>
       </form>
+      <button type="submit" class="btn btn-success" id="next4">Next</button>
+    </form>
+
+      <div id="result">
+      </div>
 
 
 

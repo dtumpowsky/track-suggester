@@ -1,4 +1,6 @@
-
+#start {
+  display: none;
+}
 #city {
   display: none;
 }

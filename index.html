@@ -11,84 +11,68 @@
   <body>
     <div class="container">
 
-
-
-
 <!--Question 1-->
-    <form id="trackSelect">
-      <div class="form-group">
-        <label for="nameInput">Please Enter your name</label>
-        <input type="text" class="form-control" id="nameInput" placeholder="Name">
-        <small id="greeting">Help us get to know you.</small>
-      </div>
-
-    </form>
-<!-- <button type="submit" class="btn btn-success" id="next1">Next</button> -->
-      <h4 id="start"> Hello! Now lets get started... </h4>
+      <form id="hello">
+        <div class="form-group">
+          <label for="nameInput">Please Enter your name</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          <small id="greeting">Help us get to know you.</small>
+        </div>
+      </form>
 <!--Question 2-->
-      <form id="city">
-        <h3> Which of these tech hubs would like work in?</h5>
-        <div class="radio1">
-          <label><input type="radio" name="question2" value="" id="seattle">Seattle </label>
+      <form id="trackSelect">
+        <div class="form-group">
+          <h3> Which of these tech hubs would like work in?</h3>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="" id="seattle">Seattle
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="question2" value="female">San Francisco
+          </label>
         </div>
-        <div class="radio1">
-          <label><input type="radio" name="question2" value="" id="sanFran">San Francisco</label>
-        </div>
-        <!-- <button type="submit" class="btn btn-success" id="next2">Next</button> -->
-      </form>
-
-
-
 <!--Question 3-->
-      <form id="interest">
-        <h3> If you had to pick, what area of development spaks your interest?</h5>
-        <div class="radio1">
-          <label><input type="radio" name="question3" value="" id="frontEnd">Aesthetics of the webpage</label>
+        <div class="form-group">
+          <h3> If you had to pick, what area of development spaks your interest?</h3>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="" id="frontEnd">Aesthetics of the webpage
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="question3" value="" id="backEnd">Manipulation of data
+          </label>
         </div>
-        <div class="radio1">
-          <label><input type="radio" name="question3" value="" id="backEnd">Manipulation of data</label>
-        </div>
-        <!-- <button type="submit" class="btn btn-success" id="next3">Next</button> -->
-      </form>
-
-
 <!--Question 4-->
-      <form id="workEnviro">
-        <div class="radio1">
-          <label><input type="radio" name="question4" value="" id="startUp">Start Up</label>
+        <div class="form-group">
+          <h3> Which environment would you prefer to work in?</h3>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="" id="startUp">Start Up
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="question4" value="" id="corp">Large Enterprise
+          </label>
         </div>
-        <div class="radio1">
-          <label><input type="radio" name="question4" value="" id="corp">Large Enterprise</label>
+<!--Question 5-->
+        <div class="form-group">
+          <h3> Which company would you prefer to be a part of?</h3>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="" id="corpAmazon">Amazon
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="question5" value="" id="corpMicro">Microsoft
+          </label>
         </div>
-      <!-- <button type="submit" class="btn btn-success" id="next4">Next</button> -->
+<!--Question 5 alternative-->
+        <div class="form-group">
+          <h3> Which company would you prefer to be a part of?</h3>
+          <label class="radio-inline">
+            <input type="radio" name="question5-2" value="" id="corpGoogle">Google
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="question5-2" value="" id="stackOverflow">stackOverflow
+          </label>
+        </div>
+
+        <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
       </form>
-
-
-
-<!--Question 5= corp Seattle-->
-      <form id="corpSeattle">
-        <div class="radio1">
-          <label><input type="radio" name="question5" value="" id="corpAmazon">Amazon</label>
-        </div>
-        <div class="radio1">
-          <label><input type="radio" name="question5" value="" id="corpMicro">Microsoft</label>
-        </div>
-        <!-- <button type="submit" class="btn btn-success" id="next4">Next</button> -->
-      </form>
-
-
-<!--Question 5= corp SanFran-->
-      <form id="corpSanFran">
-        <div class="radio1">
-          <label><input type="radio" name="question5-2" value="" id="corpGoogle">Google</label>
-        </div>
-        <div class="radio1">
-          <label><input type="radio" name="question5-2" value="" id="stackOverflow">stackOverflow</label>
-        </div>
-      <!-- <button type="submit" class="btn btn-success" id="next4">Next</button> -->
-    </form>
-
-    <button type="submit" class="btn btn-success" id="next">Next</button>
 
 
     </div>

@@ -2,15 +2,15 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/styles2.css" type="text/css" media="all">
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts2.js"></script>
 
     <title>Career Selector</title>
   </head>
   <body>
     <div class="container">
-
+      <div class="jumbotron">
 <!--Question 1-->
       <form id="hello">
         <div class="form-group">
@@ -33,7 +33,7 @@
           </div>
 <!--Question 3-->
         <div class="form-group">
-          <h3> If you had to pick, what area of development spaks your interest?</h3>
+          <h3> If you had to pick, what area of development sparks your interest?</h3>
           <label class="radio-inline">
             <input type="radio" name="question3" value="frontEnd" id="frontEnd">Aesthetics of the webpage
           </label>
@@ -68,14 +68,16 @@
             <input type="radio" name="question5-2" value="corpGoogle" id="corpGoogle">Google
           </label>
           <label class="radio-inline">
-            <input type="radio" name="question5-2" value="stackOverflow" id="stackOverflow">stackOverflow
+            <input type="radio" name="question5-2" value="stackOverflow" id="stackOverflow">Stack Overflow
           </label>
         </div>
 
         <button type="submit" id="result" class="btn btn-primary">Submit</button>
       </form>
 
+      <p id="answer"></p>
 
+      </div>
     </div>
   </body>
 </html>

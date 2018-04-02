@@ -1,12 +1,13 @@
-var track1 = "CSS"
-var track2 = "PHP"
-var track3 = "Java"
-var track4 = "C#"
+var track1 = "CSS!!"
+var track2 = "PHP!!"
+var track3 = "Java!!"
+var track4 = "C#!!"
 var city;
 var path;
 var workEnviro;
 var corpSeattle;
 var corpSanFran;
+var text = "Congratulations! Your next career is in "
 
 
 
@@ -30,6 +31,8 @@ $(document).ready(function() {
 	}
 
 
+
+
 		$("form#trackSelect").submit(function(event) {
 
 			getValues();
@@ -37,22 +40,22 @@ $(document).ready(function() {
 
 			if (city == "seattle" && path == "backEnd" && workEnviro == "corp") {
 				$("#northWest").show();
-			} else if (city == "seattle" && path == "backEnd" && workEnviro == "corp") {
+			} else if (city == "sanFran" && path == "backEnd" && workEnviro == "corp") {
 				$("#cali").show();
 			} else {}
 
 			if (city == "seattle" && path == "backEnd" && workEnviro == "corp" && corpSeattle == "corpAmazon") {
-			  alert(track3);
+			  $("#answer").text(text + track3);
 			} else if (corpSeattle == "corpMicro") {
-				alert(track3);
-		  } else {}
+				$("#answer").text(text + track3);
+		  }
 
 			if (workEnviro == "startUp") {
-				 alert(track2);
-			} else {}
+				 $("#answer").text(text + track2);
+			}
 
 			if (path == "frontEnd") {
-				 alert(track1);
+				 $("#answer").text(text + track1);
 			}
 
 

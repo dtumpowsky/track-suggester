@@ -28,21 +28,27 @@ $(document).ready(function() {
 
 
 		$("form#trackSelect").submit(function(event) {
+
 			getValues();
-		event.preventDefault();
+			event.preventDefault();
 
 
+			console.log(city)
+			console.log(path)
+			console.log(workEnviro)
+			console.log(corpSeattle)
+			console.log(corpSanFran)
 
 
-			if (city == "seattle" && path == "backEnd" && workEnviro == "corp" && corpSeatte == "corpAmazon") {
+			if (city == "seattle" && path == "backEnd" && workEnviro == "corp" && corpSeattle == "corpAmazon") {
 			  alert("Java");
-			} else if (corpSeattle == "#corpMicro") {
+			} else if (corpSeattle == "corpMicro") {
 				alert("C#");
-		  };
+		  } else {}
 
 			if ("#result" == track4) {
 				 alert("Java");
-			}
+			} else {}
 
 			if ("#result" == track3) {
 				 alert("C#");
@@ -50,14 +56,11 @@ $(document).ready(function() {
 
 			if ("#result" == track2) {
 				 alert("PHP");
-			}
+			} else {}
 
 			if ("#result" == track2) {
 				 alert("PHP");
 			}
-
-
-
 
 	})
 });

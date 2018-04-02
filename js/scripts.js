@@ -8,6 +8,9 @@ var workEnviro;
 var corpSeattle;
 var corpSanFran;
 
+
+
+
 $(document).ready(function() {
 
 	$("button#next1").click(function() {
@@ -32,35 +35,26 @@ $(document).ready(function() {
 			getValues();
 			event.preventDefault();
 
-
-			console.log(city)
-			console.log(path)
-			console.log(workEnviro)
-			console.log(corpSeattle)
-			console.log(corpSanFran)
-
+			if (city == "seattle" && path == "backEnd" && workEnviro == "corp") {
+				$("#northWest").show();
+			} else if (city == "seattle" && path == "backEnd" && workEnviro == "corp") {
+				$("#cali").show();
+			} else {}
 
 			if (city == "seattle" && path == "backEnd" && workEnviro == "corp" && corpSeattle == "corpAmazon") {
-			  alert("Java");
+			  alert(track3);
 			} else if (corpSeattle == "corpMicro") {
-				alert("C#");
+				alert(track3);
 		  } else {}
 
-			if ("#result" == track4) {
-				 alert("Java");
+			if (workEnviro == "startUp") {
+				 alert(track2);
 			} else {}
 
-			if ("#result" == track3) {
-				 alert("C#");
+			if (path == "frontEnd") {
+				 alert(track1);
 			}
 
-			if ("#result" == track2) {
-				 alert("PHP");
-			} else {}
-
-			if ("#result" == track2) {
-				 alert("PHP");
-			}
 
 	})
 });

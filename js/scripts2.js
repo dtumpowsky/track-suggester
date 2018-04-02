@@ -50,6 +50,12 @@ $(document).ready(function() {
 				$("#answer").text(text + track3);
 		  }
 
+			if (city == "sanFran" && path == "backEnd" && workEnviro == "corp" && corpSanFran == "corpGoogle") {
+			  $("#answer").text(text + track3);
+			} else if (corpSanFran == "corpStackOverflow") {
+				$("#answer").text(text + track3);
+		  }
+
 			if (workEnviro == "startUp") {
 				 $("#answer").text(text + track2);
 			}
